@@ -1,11 +1,6 @@
 #!/usr/bin/python3
+Square = __import__('0-square').Square
 
-"""
-Create a class named Square with a private instance attribute of: size.
-"""
-
-
-class Square:
-    """define class of square"""
-    def __init__(self, size):
-        self.__size = size
+my_square = Square()
+print(type(my_square))
+print(my_square.__dict__)
